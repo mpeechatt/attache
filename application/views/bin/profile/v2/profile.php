@@ -1,4 +1,8 @@
-<?php $root = dirname( __FILE__ ); ?>
+<?php
+	// Get the location of this file
+	$root = dirname( __FILE__ );
+?>
+
 <!DOCTYPE html>
 <html>
 <head>

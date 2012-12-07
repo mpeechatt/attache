@@ -11,6 +11,19 @@ class Profile extends CI_Controller {
 		$this->load->view( "bin/resume" );
 		$this->load->view( "inc/footer" );
 	}
+
+	/**
+	 * New Version of the Profile
+	 */
+	public function v2() {
+		$this->load->view( "bin/profile/v2/profile" );
+		$this->load->view( "bin/profile/v2/banner" );
+		// $this->load->view( "bin/profile/v2/toolbar" );
+
+		$this->load->view( "bin/profile/v2/resumes" );
+		
+		$this->load->view( "inc/footer" );	
+	}
 }
 
 /* End of file welcome.php */

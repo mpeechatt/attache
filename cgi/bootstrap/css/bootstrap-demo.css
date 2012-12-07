@@ -1648,13 +1648,6 @@ select:focus:required:invalid:focus {
           border-radius: 4px 0 0 4px;
 }
 
-.input-prepend .add-on:last-child,
-.input-prepend .btn:last-child {
-  -webkit-border-radius: 0 4px 4px 0;
-     -moz-border-radius: 0 4px 4px 0;
-          border-radius: 0 4px 4px 0;
-}
-
 .input-append input,
 .input-append select,
 .input-append .uneditable-input {
