@@ -12,18 +12,23 @@
 				</div><!--/.nav-collapse -->
 			</div>
 
-			<div class="row-fluid">
-				<div class="btn-toolbar span10 offset2">
-					<div class="pull-left resume-editor-modes">
-						<?php require_once "$root/toolbar/modes.php"; ?>
+			<div class="container-fluid">
+				<div class="row-fluid">
+					<div class="span2 btn-toolbar">
+						<a class="resume-list-header">Resume List</a>
 					</div>
+					<div class="btn-toolbar span10">
+						<div class="pull-left resume-editor-modes">
+							<?php require_once "$root/toolbar/modes.php"; ?>
+						</div>
 
-					<div class="pull-right resume-editor-tools">
-						<?php require_once "$root/toolbar/edit.php"; ?>
-						<?php require_once "$root/toolbar/add.php"; ?>
-						<?php require_once "$root/toolbar/rearrange.php"; ?>
-						<?php require_once "$root/toolbar/delete.php"; ?>
-						<?php require_once "$root/toolbar/finalize.php"; ?>
+						<div class="pull-right resume-editor-tools">
+							<?php require_once "$root/toolbar/edit.php"; ?>
+							<?php require_once "$root/toolbar/add.php"; ?>
+							<?php require_once "$root/toolbar/rearrange.php"; ?>
+							<?php require_once "$root/toolbar/delete.php"; ?>
+							<?php require_once "$root/toolbar/finalize.php"; ?>
+						</div>
 					</div>
 				</div>
 			</div>
