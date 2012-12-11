@@ -6,26 +6,25 @@
 		background: url( /attache/cgi/img/bg.png ) #ebebeb;
 	}
 
-	.resumebar {
-		margin-top: 96px;
-		position: fixed;
-		height: 100%;
-		width: 100%;
+	.navbar-inner {
+		border-bottom: 0;
+	}
+
+	.controlbar {
+		background: #111;
+		padding-top: 40px;
 	}
 
 	.resumelist {
 		background: #111;
 		height: 100%;
+		margin-bottom: 0;
 	}
 
 	.resumelist li {
 		text-align: center;
 	}
 
-	.resume-list-header:hover {
-		text-decoration: none;
-	}
-	
 	.resume-list-header {
 		margin-top: 5px;
 		width: 89px;
@@ -38,7 +37,6 @@
 		text-align: center;
 		text-shadow: 0 1px 1px rgba(255, 255, 255, 0.75);
 		vertical-align: middle;
-		cursor: pointer;
 		background-color: whiteSmoke;
 		background-image: -moz-linear-gradient(top, white, #E6E6E6);
 		background-image: -webkit-gradient(linear, 0 0, 0 100%, from(white), to(#E6E6E6));
@@ -72,10 +70,14 @@
 		padding-right: 20px;
 	}
 
+	.viewport {
+		height: 100%;
+	}
+
 	/**
 	 * PAGE STYLE
 	 */
-	.page {
+	.resume {
 		background: #fff;
 		box-shadow: 0 0 10px rgba( 0, 0, 0, 0.2 );
 		-webkit-box-shadow: 0 0 10px rgba( 0, 0, 0, 0.2 );
@@ -88,4 +90,45 @@
 		width: 716px;
 		min-height: 956px;
 	}
+
+	.resume ul,
+	.resume li {
+		list-style: none;
+		margin: 0;
+		padding: 0;
+	}
+</style>
+
+<!-- Default Resume Style -->
+<style>
+	ul.header { margin-bottom: 10px; }
+	.header .split {}
+	.header .split:after { content: "."; display: block; clear: both; visibility: hidden; line-height: 0; height: 0; }
+	html[xmlns] .header .split { display: block; }
+	* html .header .split { height: 1%; overflow: visible; }
+	.header .left { float: left; width: 50%; }
+	.header .right { float: right; text-align: right; width: 50%; }
+	.header .title { font-size: 16px; font-weight: bold; text-align: center; }
+	.header .subtitle { font-size: 12px; font-weight: bold; }
+	.header .descriptor { margin-bottom: 0; }
+	.header .heavy { font-weight: bold; }
+	.header .li { margin-left: 20px; list-style: circle; }
+	.header .container { margin-bottom: 6px; }
+
+
+	.page .section { margin-bottom: 12px; }
+	.page .section_name { font-size: 14px; font-weight: bold; }
+	.page .section_content { margin-left: 40px; }
+	.page .split { position: relative; }
+	.page .split:after { content: "."; display: block; clear: both; visibility: hidden; line-height: 0; height: 0; }
+	html[xmlns] .page .split { display: block; }
+	* html .page .split { height: 1%; overflow: visible; }
+	.page .left { float: left; width: 50%; }
+	.page .right { float: right; text-align: right; width: 50%; }
+	.page .title { font-size: 13px; font-weight: bold; }
+	.page .subtitle { font-size: 12px; font-weight: bold; }
+	.page .descriptor { margin-bottom: 6px; }
+	.page .heavy { font-weight: bold; }
+	.page .li { margin-left: 20px; list-style: circle; }
+	.page .container { margin-bottom: 6px; width: 100%; }
 </style>

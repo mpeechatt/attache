@@ -18,11 +18,11 @@ class Profile extends CI_Controller {
 	public function v2() {
 		$this->load->view( "bin/profile/v2/profile" );
 		$this->load->view( "bin/profile/v2/banner" );
-		// $this->load->view( "bin/profile/v2/toolbar" );
+		$this->load->view( "bin/profile/v2/controlbar" );
 
 		$this->load->view( "bin/profile/v2/resumes" );
 		
-		$this->load->view( "inc/footer" );	
+		// $this->load->view( "inc/footer" );	
 	}
 }
 

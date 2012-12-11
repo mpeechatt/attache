@@ -6,11 +6,18 @@
 	//	LAZY LOAD
 	//
 	$( function() {
-			$( "a[title!='']" ).tooltip(
-				{
-					'placement' : 'bottom'
-				}
-			);
+			// Resize the view that we are working with
+			resize_viewport();
+
+			// Bind to the window
+			$( window ).resize( function() { resize_viewport(); } );
 		}
 	);
+
+	//
+	//	Used to resize the view that we are working with
+	function resize_viewport() {
+		// Resize the resumebar / viewport
+		$( ".resumebar" ).height( $( window ).height() - $( ".resumebar" ).offset().top );
+	}
 </script>
