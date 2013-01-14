@@ -22,7 +22,7 @@ class Profile extends CI_Controller {
 
 		$this->load->view( "bin/profile/v2/resumes" );
 		
-		// $this->load->view( "inc/footer" );	
+		// $this->load->view( "inc/footer" );
 	}
 }
 

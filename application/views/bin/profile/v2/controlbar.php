@@ -5,6 +5,7 @@
 			<div class="resume-list-header">Resume List</div>
 		</div>
 		<div class="span10 btn-toolbar">
+			<!--
 			<div class="pull-left resume-editor-modes">
 				<?php require_once "$root/toolbar/modes.php"; ?>
 			</div>
@@ -16,6 +17,7 @@
 				<?php require_once "$root/toolbar/delete.php"; ?>
 				<?php require_once "$root/toolbar/finalize.php"; ?>
 			</div>
+			-->
 		</div>
 	</div>
 </div>

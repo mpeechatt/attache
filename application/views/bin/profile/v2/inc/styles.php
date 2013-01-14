@@ -1,6 +1,9 @@
 <link rel="Stylesheet" type="text/css" href="/attache/cgi/bootstrap/css/bootstrap.css" />
 <link rel="Stylesheet" type="text/css" href="/attache/cgi/bootstrap/css/bootstrap-responsive.css" />
 
+<link rel="Stylesheet" type="text/css" href="/attache/cgi/jquery/ui/css/no-theme/jquery-ui-1.9.2.custom.min.css" />
+<link rel="Stylesheet" type="text/css" href="/attache/cgi/jquery/ui/css/ui-darkness/jquery-ui-1.9.2.custom.min.css" />
+
 <style>
 	body {
 		background: url( /attache/cgi/img/bg.png ) #ebebeb;
