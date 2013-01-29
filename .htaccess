@@ -1,3 +1,3 @@
 RewriteEngine on
-RewriteCond $1 !^(index\.php|cgi|robots\.txt)
+RewriteCond $1 !^(index\.php|robots\.txt)
 RewriteRule ^(.*)$ /attache/index.php/$1

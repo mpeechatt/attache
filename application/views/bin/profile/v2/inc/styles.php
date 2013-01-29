@@ -1,12 +1,12 @@
-<link rel="Stylesheet" type="text/css" href="/attache/cgi/bootstrap/css/bootstrap.css" />
-<link rel="Stylesheet" type="text/css" href="/attache/cgi/bootstrap/css/bootstrap-responsive.css" />
+<link rel="Stylesheet" type="text/css" href="/attache/assets/css/bootstrap.css" />
+<link rel="Stylesheet" type="text/css" href="/attache/assets/css/bootstrap-responsive.css" />
 
-<link rel="Stylesheet" type="text/css" href="/attache/cgi/jquery/ui/css/no-theme/jquery-ui-1.9.2.custom.min.css" />
-<link rel="Stylesheet" type="text/css" href="/attache/cgi/jquery/ui/css/ui-darkness/jquery-ui-1.9.2.custom.min.css" />
+<link rel="Stylesheet" type="text/css" href="/attache/assets/css/ui/no-theme/jquery-ui-1.9.2.custom.min.css" />
+<link rel="Stylesheet" type="text/css" href="/attache/assets/css/ui/ui-darkness/jquery-ui-1.9.2.custom.min.css" />
 
 <style>
 	body {
-		background: url( /attache/cgi/img/bg.png ) #ebebeb;
+		background: url( /attache/assets/img/bg.png ) #ebebeb;
 	}
 
 	.navbar-inner {
@@ -74,7 +74,7 @@
 	}
 
 	.viewport {
-		height: 100%;
+		margin-top: 100px;
 	}
 
 	/**
@@ -99,6 +99,10 @@
 		list-style: none;
 		margin: 0;
 		padding: 0;
+	}
+
+	.navbar .nav .dropdown-toggle .caret {
+		margin-top: 4px;
 	}
 </style>
 

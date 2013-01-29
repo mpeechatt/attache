@@ -1,9 +1,12 @@
-<script src="/attache/cgi/jquery/jquery.js"></script>
-<script src="/attache/cgi/bootstrap/js/bootstrap.js"></script>
+<script src="/attache/assets/js/jquery.js"></script>
+<script src="/attache/assets/js/jquery.min.js"></script>
 
-<script src="/attache/cgi/jquery/ui/js/jquery-ui-1.9.2.custom.min.js"></script>
+<script src="/attache/assets/js/bootstrap.js"></script>
+<script src="/attache/assets/js/bootstrap.min.js"></script>
 
-<script src="/attache/cgi/core/components.js"></script>
+<script src="/attache/assets/js/jquery-ui-1.9.2.custom.min.js"></script>
+
+<script src="/attache/assets/js/core/components.js"></script>
 
 <!-- Attache Core -->
 <script></script>
@@ -27,10 +30,10 @@
 			bind_delete();
 
 			// Resize the view that we are working with
-			resize_viewport();
+			// resize_viewport();
 
 			// Bind to the window
-			$( window ).resize( function() { resize_viewport(); } );
+			// $( window ).resize( function() { resize_viewport(); } );
 		}
 	);
 
