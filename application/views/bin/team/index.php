@@ -38,8 +38,8 @@
 			</div>
 			<div class="span8">
 				<legend>Chief Information Officer</legend>
-				<p class="muted">"QUOTE HERE"</p>
-				<p>BIO HERE</p>
+				<p class="muted">"Attach&eacute;, we are totally going to regret that accent."</p>
+				<p>Torin Bond graduated RIT with a Bachelor of Science in Information Technology and a minor in History in Fall of 2012. During his time at RIT he has worked on many different web projects and has been able to fill many roles on a team. He has worked for General Electric as well as Paperless Post working on mobile web development. He currently works for the advertising firm, Dixon Schwabl, in Rochester and constantly works towards the progress of Attach&eacute;.</p>
 			</div>
 		</div>
 	</div>
