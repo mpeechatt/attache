@@ -7,7 +7,7 @@ class Mobile extends CI_Controller {
 	public function index()
 	{
 		$this->load->view( 'template-top' );
-		$this->load->view( 'bin/mobile/index' );
+		$this->load->view( 'mobile/index' );
 	}
 }
 

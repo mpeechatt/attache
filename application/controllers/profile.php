@@ -15,32 +15,19 @@ class Profile extends CI_Controller {
 	/**
 	 * New Version of the Profile
 	 */
-	public function v2() {
-		$this->load->library( 'jquery', TRUE );
+	public function v2()
+	{
+		$this->data = array();
+		
 		/*
-		$this->load->library( 'javascript',
-			array(
-				'js_library_driver' => 'jquery',
-				'autoload' => FALSE
-			)
-		);
-
-
-		$this->load->library( 'javascript',
-			array(
-				'js_library_driver' => 'bootstrap',
-				'autoload' => FALSE
-			)
-		);
-		*/
-
 		$this->load->view( "bin/profile/v2/profile" );
 		$this->load->view( "bin/profile/v2/controlbar" );
 		$this->load->view( "bin/profile/v2/banner" );
-
 		$this->load->view( "bin/profile/v2/resumes" );
-		
 		$this->load->view( "inc/footer" );
+		*/
+
+		$this->load->view( "profile/v2/template", $this->data );
 	}
 }
 

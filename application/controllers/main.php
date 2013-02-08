@@ -7,7 +7,7 @@ class Main extends CI_Controller {
 	public function index()
 	{
 		$this->load->view( 'template-top' );
-		$this->load->view( 'bin/main/index' );
+		$this->load->view( 'main/index' );
 	}
 }
 

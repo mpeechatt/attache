@@ -7,7 +7,7 @@ class Support extends CI_Controller {
 	public function index()
 	{
 		$this->load->view( 'template-top' );
-		$this->load->view( 'bin/support/index' );
+		$this->load->view( 'support/index' );
 	}
 }
 

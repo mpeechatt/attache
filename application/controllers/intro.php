@@ -7,7 +7,7 @@ class Intro extends CI_Controller {
 	public function index()
 	{
 		$this->load->view( 'template-top' );
-		$this->load->view( 'bin/intro/index' );
+		$this->load->view( 'intro/index' );
 	}
 }
 

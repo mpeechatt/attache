@@ -104,6 +104,10 @@
 	.navbar .nav .dropdown-toggle .caret {
 		margin-top: 4px;
 	}
+
+	#master .controls {
+		display: none;
+	}
 </style>
 
 <!-- Default Resume Style -->

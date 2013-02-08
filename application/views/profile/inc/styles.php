@@ -1,9 +1,9 @@
-<link rel="Stylesheet" type="text/css" href="/attache/cgi/bootstrap/css/bootstrap.css" />
-<link rel="Stylesheet" type="text/css" href="/attache/cgi/bootstrap/css/bootstrap-responsive.css" />
+<link rel="Stylesheet" type="text/css" href="/attache/assets/css/bootstrap.css" />
+<link rel="Stylesheet" type="text/css" href="/attache/assets/css/bootstrap-responsive.css" />
 
 <style>
 	body {
-		background: url( /attache/cgi/img/bg.png ) #ebebeb;
+		background: url( /attache/assets/img/bg.png ) #ebebeb;
 	}
 
 	.editing-toolbar {

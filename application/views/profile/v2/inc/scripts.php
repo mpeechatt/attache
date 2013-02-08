@@ -1,15 +1,7 @@
 <script src="/attache/assets/js/jquery.js"></script>
-<script src="/attache/assets/js/jquery.min.js"></script>
-
 <script src="/attache/assets/js/bootstrap.js"></script>
-<script src="/attache/assets/js/bootstrap.min.js"></script>
-
 <script src="/attache/assets/js/jquery-ui-1.9.2.custom.min.js"></script>
-
 <script src="/attache/assets/js/core/components.js"></script>
-
-<!-- Attache Core -->
-<script></script>
 
 <!-- Binding Initialization -->
 <script>
@@ -19,35 +11,14 @@
 	 * Author: Jeremy Pitzeruse
 	 */
 	$( function() {
-			// Bind the tooltip functionality to the document
-			$( document ).tooltip();
-
 			// Bind the Attache functionality
 			bind_hover();
 			bind_editing();
 			bind_adding();
 			bind_rearranging();
 			bind_delete();
-
-			// Resize the view that we are working with
-			// resize_viewport();
-
-			// Bind to the window
-			// $( window ).resize( function() { resize_viewport(); } );
 		}
 	);
-
-	/**
-	 * Name: resize_viewport
-	 *
-	 * Description: Resize the viewport
-	 *
-	 * Author: Jeremy Pitzeruse
-	 */
-	function resize_viewport() {
-		// Resize the resumebar / viewport
-		$( ".resumebar" ).height( $( window ).height() - $( ".resumebar" ).offset().top );
-	}
 </script>
 
 <!-- Hover Capabilities -->
@@ -69,13 +40,23 @@
 			"left"
 		];
 
+		// Create a controls variable
+		var controls = "<div class='controls' style='display: none;'>"
+					 + "<button class='btn'><i class='icon'></i></button>"
+					 + "<button class='btn'><i class='icon'></i></button>"
+					 + "</div>";
+
 		// Loop through the sortable objects
 		for( x in sortable ) {
 			// Create a target
-			var target = "#master .page";
+			var target = "#master ." + sortable[x];
 
 			// Loop through each of the children
 			$( target ).children().each( function() {
+					// Add the controls
+					$( this ).append( controls );
+
+					// Bind the mouse enter mouse leave
 					$( this ).bind( 'mouseenter', hover_in );
 					$( this ).bind( 'mouseleave', hover_out );
 				}
@@ -90,7 +71,7 @@
 	 *
 	 * Author: Jeremy Pitzeruse
 	 */
-	function bind_hover() {
+	function unbind_hover() {
 		// Establish which elements are sortable
 		var sortable = [
 			"page",
@@ -103,10 +84,14 @@
 		// Loop through the sortable objects
 		for( x in sortable ) {
 			// Create a target
-			var target = "#master .page";
+			var target = "#master ." + sortable[x];
 
 			// Loop through each of the children
 			$( target ).children().each( function() {
+					// Remove the controls from the div
+					$( this ).find( '.controls' ).remove();
+
+					// Unind the mouse enter mouse leave
 					$( this ).unbind( 'mouseenter', hover_in );
 					$( this ).unbind( 'mouseleave', hover_out );
 				}
@@ -121,7 +106,14 @@
 	 *
 	 * Author: Jeremy Pitzeruse
 	 */
-	function hover_in() {}
+	function hover_in( event ) {
+		// Prevent the event from propagating
+		event.stopPropagation();
+		event.stopImmediatePropagation();
+
+		// Find the controls and show
+		$( this ).find( '.controls:first' ).css( 'display', 'block' );
+	}
 
 	/**
 	 * Name: hover_out
@@ -130,7 +122,14 @@
 	 *
 	 * Author: Jeremy Pitzeruse
 	 */
-	function hover_out() {}
+	function hover_out( event ) {
+		// Prevent the event from propagating
+		event.stopPropagation();
+		event.stopImmediatePropagation();
+
+		// Find the controls and hide
+		$( this ).find( '.controls:first' ).css( 'display', 'none' );
+	}
 </script>
 
 <!-- Editing Capabilities -->

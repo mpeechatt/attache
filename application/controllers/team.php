@@ -7,7 +7,7 @@ class Team extends CI_Controller {
 	public function index()
 	{
 		$this->load->view( 'template-top' );
-		$this->load->view( 'bin/team/index' );
+		$this->load->view( 'team/index' );
 	}
 }
 
