@@ -27,7 +27,7 @@
 		// Unbind all capabilities
 		unbind_editing();
 		unbind_adding();
-		// unbind_rearranging();
+		unbind_rearranging();
 		unbind_delete();
 	}
 
@@ -41,4 +41,16 @@
 		bind_rearranging();
 		bind_delete();
 	}
+</script>
+
+<script>
+	function preview_mode() {
+		unbind_all();
+	}
+
+	function editing_mode() {
+		bind_all();
+	}
+
+	function finalize_resume() {}
 </script>

@@ -110,8 +110,8 @@ function add( event ) {
 			target.removeAttr( 'style' );
 
 			// Rebind
-			// unbind_all();
-			// bind_all();
+			unbind_all();
+			bind_all();
 		}
 	);
 }

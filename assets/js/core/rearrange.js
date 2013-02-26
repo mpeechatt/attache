@@ -19,10 +19,10 @@ function bind_rearranging() {
 	// Loop through each of the sortable elements
 	for( x in sortable ) {
 		// Create a target
-		var target = "#master ." + sortable[x];
+		var t = "#master ." + sortable[x];
 
 		// Bind the sortable functionality
-		$( target ).sortable( {
+		$( t ).sortable( {
 				axis : 'y',
 				containment : 'parent',
 				cursor : 'move',
@@ -50,6 +50,7 @@ function bind_rearranging() {
 function unbind_rearranging() {
 	// Establish which elements are sortable
 	var sortable = [
+		"header",
 		"page",
 		"section_content",
 		"container",
@@ -60,10 +61,12 @@ function unbind_rearranging() {
 	// Loop through each of the sortable elements
 	for( x in sortable ) {
 		// Create a target
-		var target = "#master ." + sortable[x];
+		var t = "#master ." + sortable[x];
 
-		// Destroy the sortable object
-		$( target ).sortable( 'destroy' );
+		try {
+			// Destroy the sortable object
+			$( t ).sortable( 'destroy' );
+		} catch( e ) {}
 	}
 }
 

@@ -111,15 +111,15 @@
 	#master .ui-sortable > * {
 		border: 1px solid;
 		border-radius: 5px;
-		margin: 3px;
-		padding: 3px;
+		margin: 5px;
+		padding: 5px;
 	}
 
 	#master .add {
 		border: 1px solid;
 		text-align: center;
-		margin: 3px;
-		padding: 3px;
+		margin: 5px;
+		padding: 5px;
 		opacity: .3;
 	}
 
