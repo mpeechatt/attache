@@ -33,36 +33,37 @@ var components = [
 	 *	General Container
 	 */
 	{
-		'can_add' : true,
+		'can_add' : false,
 		'label' : 'Container',
 		'class' : 'container',
 		'template' : '<ul class="container"></ul>',
-		'default' : ''
+		'default' : '<div class="add"><i class="icon icon-plus"></i></div>'
 	},
 
 	/**
 	 *	Section Container
 	 */
 	{
-		'can_add' : true,
+		'can_add' : false,
 		'label' : 'Section',
 		'class' : 'section',
 		'template' : '<ul class="section"></ul>',
-		'default' : ''
+		'default' : '<li class="section_name">Section Name</li>' +
+					'<ul class="section_content"><div class="add"><i class="icon icon-plus"></i></div></ul>'
 	},
 	{
 		'can_add' : false,
 		'label' : 'Section Name',
 		'class' : 'section_name',
 		'template' : '<li class="section_name"></li>',
-		'default' : ''
+		'default' : 'Section Name'
 	},
 	{
 		'can_add' : false,
 		'label' : 'Section Content',
 		'class' : 'section_content',
 		'template' : '<ul class="section_content"></ul>',
-		'default' : ''
+		'default' : '<div class="add"><i class="icon icon-plus"></i></div>'
 	},
 
 	/**

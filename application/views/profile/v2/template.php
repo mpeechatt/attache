@@ -24,12 +24,6 @@
 							<li><a tabindex="-1" href="#">Master</a></li>
 							<li class="divider"></li>
 							<?php
-								// Create resumes
-								$resumes = array(
-									array( 'name' => 'Resume 1' ),
-									array( 'name' => 'Resume 2' )
-								);
-
 								// Loop through each of the resumes
 								foreach( $resumes as $resume ) {
 									// Echo out the resume link
@@ -57,7 +51,7 @@
 							<li class="dropdown">
 
 								<a class="dropdown-toggle current-user" data-toggle="dropdown" href="#">
-									<?php echo( 'jpitzeruse@gmail.com' ); ?>
+									<?php echo( $user['email'] ); ?>
 									<span class="caret"></span>
 								</a>
 

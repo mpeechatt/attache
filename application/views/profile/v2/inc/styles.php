@@ -104,9 +104,31 @@
 	.navbar .nav .dropdown-toggle .caret {
 		margin-top: 4px;
 	}
+</style>
 
-	#master .controls {
-		display: none;
+<!-- FFunctional Style -->
+<style>
+	#master .ui-sortable > * {
+		border: 1px solid;
+		border-radius: 5px;
+		margin: 3px;
+		padding: 3px;
+	}
+
+	#master .add {
+		border: 1px solid;
+		text-align: center;
+		margin: 3px;
+		padding: 3px;
+		opacity: .3;
+	}
+
+	#master .add:hover {
+		opacity: .7;
+	}
+
+	#master .component {
+		text-align: left;
 	}
 </style>
 
@@ -124,7 +146,7 @@
 	.header .descriptor { margin-bottom: 0; }
 	.header .heavy { font-weight: bold; }
 	.header .li { margin-left: 20px; list-style: circle; }
-	.header .container { margin-bottom: 6px; }
+	.header .container { margin-bottom: 6px; width: auto; }
 
 
 	.page .section { margin-bottom: 12px; }
@@ -141,5 +163,5 @@
 	.page .descriptor { margin-bottom: 6px; }
 	.page .heavy { font-weight: bold; }
 	.page .li { margin-left: 20px; list-style: circle; }
-	.page .container { margin-bottom: 6px; width: 100%; }
+	.page .container { margin-bottom: 6px; width: auto; }
 </style>
